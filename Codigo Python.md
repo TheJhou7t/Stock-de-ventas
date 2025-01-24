@@ -27,7 +27,7 @@ class DataManager:
         with open(file_path, "w") as file:
             json.dump(data, file, indent=4)
 
-# Clase para gestionar el negocio
+# Clase para gestionar el negocio de ventas
 class SistemaGestion:
     def __init__(self):
         # Cargar datos desde los archivos
@@ -63,7 +63,7 @@ class SistemaGestion:
         metodo_pago = input("Método de pago (contado/fiado): ").lower()
         fecha = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        # Registrar la venta
+        # Registrar la venta 
         venta = {
             "cliente": cliente,
             "producto": producto,
